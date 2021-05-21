@@ -22,10 +22,3 @@ spec:
       target:
         type: AverageValue
         averageValue: 100Mi
-  behavior:
-    scaleDown:
-      stabilizationWindowSeconds: 2
-      policies:
-        - type: Pods
-          value: 1
-          periodSeconds: 2
