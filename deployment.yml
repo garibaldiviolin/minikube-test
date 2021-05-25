@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: boskey/helloworld
+        image: "boskey/helloworld"
         imagePullPolicy: Never
         resources:
           limits:
