@@ -3,8 +3,7 @@ minikube-start:
 
 build-image:
 	eval $(minikube docker-env)
-	docker image rm --force boskey/helloworld
-	docker build -t boskey/helloworld .
+	docker build -t "boskey/helloworld" .
 
 deploy:
 	kubectl apply -f deployment.yml
